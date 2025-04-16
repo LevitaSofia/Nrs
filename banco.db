@@ -1,0 +1,13 @@
+import pandas as pd
+import sqlite3
+
+# Lê a planilha
+df = pd.read_excel("lista_colaboradores.xlsx")
+
+# Conecta (ou cria) o banco de dados SQLite
+con = sqlite3.connect("colaboradores.db")
+
+# Salva o DataFrame como tabela SQL
+df.to_sql("colaboradores", con, if_exists="replace", index=False)
+
+print("Banco de dados criado com sucesso!")

@@ -1,0 +1,30 @@
+.modal-body .btn {
+    min-width: 180px;
+    padding: 8px 16px;
+}
+
+.modal-body .btn i {
+    font-size: 1.1em;
+}
+
+.download-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+
+.download-btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    font-weight: 500;
+}
+
+.download-btn i {
+    margin-right: 0.5rem;
+}
+
+#downloadPdfLink {
+    display: none;
+} 
